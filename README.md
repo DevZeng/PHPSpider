@@ -6,4 +6,4 @@ Just a simple spider
 composer install
 
 php test.php
-第一个版本，下个版本应该加入多线程及cookie处理
+第一个版本，下个版本应该加入多进程及cookie处理
