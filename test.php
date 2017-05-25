@@ -8,12 +8,12 @@
     spl_autoload_register('autoload');
     $start = time();
     $count =1;
-    $url = "http://www.afwing.com";
+    $enterurl = "http://www.afwing.com";
     $download = new Spider\Downloader();
     $urlmanager = new Spider\UrlManager();
     $htmlpaser = new Spider\HTMLParser();
     $urlmanager->setUnCrawlUrl($url);
-    $download->setUrl($url)->execute();
+    $download->setUrl($enterurl)->execute();
     while ($urlmanager->getUnCrawlUrlCount()!=0){
         $count+=1;
         $url = $urlmanager->getUnCrawlUrl();
